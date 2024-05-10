@@ -15,8 +15,8 @@
 		<Authors>Mark Lauter</Authors>
 		<Description>Plumber.Serilog.Extensions provides Serilog middleware extensions for the Plumber pipeline libary.</Description>
 		<Copyright>Copyright (c) 2024 Mark Lauter</Copyright>
-		<PackageProjectUrl>https://github.com/marklauter/plumber.serilog</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/marklauter/plumber.serilog</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/marklauter/plumber.serilog.extensions</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/marklauter/plumber.serilog.extensions</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>aws lambda;middleware;pipeline;plumber;serilog</PackageTags>
 		<NeutralLanguage>en-US</NeutralLanguage>
