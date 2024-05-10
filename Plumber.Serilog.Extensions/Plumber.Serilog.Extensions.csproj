@@ -9,9 +9,9 @@
 
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 
-		<Title>Plumber.Serilog</Title>
-		<PackageId>MSL.$(AssemblyName).Pipeline</PackageId>
-		<ProductName>Plumber.Serilog</ProductName>
+		<Title>Plumber.Serilog.Extensions</Title>
+		<PackageId>MSL.$(AssemblyName)</PackageId>
+		<ProductName>Plumber.Serilog.Extensions</ProductName>
 		<Authors>Mark Lauter</Authors>
 		<Description>Plumber.Serilog provides Serilog extensions for the Plumber pipeline libary.</Description>
 		<Copyright>Copyright (c) 2024 Mark Lauter</Copyright>
