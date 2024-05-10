@@ -13,7 +13,7 @@
 		<PackageId>MSL.$(AssemblyName)</PackageId>
 		<ProductName>Plumber.Serilog.Extensions</ProductName>
 		<Authors>Mark Lauter</Authors>
-		<Description>Plumber.Serilog provides Serilog extensions for the Plumber pipeline libary.</Description>
+		<Description>Plumber.Serilog.Extensions provides Serilog middleware extensions for the Plumber pipeline libary.</Description>
 		<Copyright>Copyright (c) 2024 Mark Lauter</Copyright>
 		<PackageProjectUrl>https://github.com/marklauter/plumber.serilog</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/marklauter/plumber.serilog</RepositoryUrl>
