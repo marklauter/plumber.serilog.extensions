@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
+		<LangVersion>12</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+
+		<Title>Plumber.Serilog</Title>
+		<PackageId>MSL.$(AssemblyName).Pipeline</PackageId>
+		<ProductName>Plumber.Serilog</ProductName>
+		<Authors>Mark Lauter</Authors>
+		<Description>Plumber.Serilog provides Serilog extensions for the Plumber pipeline libary.</Description>
+		<Copyright>Copyright (c) 2024 Mark Lauter</Copyright>
+		<PackageProjectUrl>https://github.com/marklauter/plumber.serilog</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/marklauter/plumber.serilog</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>aws lambda;middleware;pipeline;plumber;serilog</PackageTags>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageIcon>plumber.png</PackageIcon>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<IsTrimmable>True</IsTrimmable>
+		<IsAotCompatible>True</IsAotCompatible>
+		<WarningLevel>9999</WarningLevel>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<IsTrimmable>True</IsTrimmable>
+		<IsAotCompatible>True</IsAotCompatible>
+		<WarningLevel>9999</WarningLevel>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="IDisposableAnalyzers" Version="4.0.7">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Diagnostics.Abstractions" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+		<PackageReference Include="MSL.Plumber.Pipeline" Version="1.0.47" />
+		<PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\images\plumber.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
