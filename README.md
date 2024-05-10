@@ -6,11 +6,15 @@
 Plumber.Serilog.Extensions provides Serilog middleware extensions for the [Plumber pipeline library](https://github.com/marklauter/plumber).
 
 ## IRequestHandler Extension Methods
-- `public static IRequestHandler<TRequest, TResponse> UseSerilogRequestLogging<TRequest, TResponse>(
+```csharp
+public static IRequestHandler<TRequest, TResponse> UseSerilogRequestLogging<TRequest, TResponse>(
     this IRequestHandler<TRequest, TResponse> handler)
-    where TRequest : class`
-- `public static IRequestHandler<TRequest, TResponse> UseSerilogRequestLogging<TRequest, TResponse>(
+    where TRequest : class
+```
+
+```csharp
+public static IRequestHandler<TRequest, TResponse> UseSerilogRequestLogging<TRequest, TResponse>(
     this IRequestHandler<TRequest, TResponse> handler,
     Action<RequestLoggerOptions<TRequest, TResponse>> configureOptions)
     where TRequest : class`  
-
+```
