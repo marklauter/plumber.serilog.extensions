@@ -1,8 +1,6 @@
 name: .NET Publish
 
 on:
-  push:
-    branches: [ "main" ]
   release:
     types: [published]
 permissions:
