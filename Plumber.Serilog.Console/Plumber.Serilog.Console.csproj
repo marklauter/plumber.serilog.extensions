@@ -21,7 +21,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Plumber.Serilog.RequestLogger\Plumber.Serilog.csproj" />
+	  <ProjectReference Include="..\Plumber.Serilog.Extensions\Plumber.Serilog.Extensions.csproj" />
 	</ItemGroup>
 	
 </Project>

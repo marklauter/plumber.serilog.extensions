@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plumber.Serilog", "Plumber.Serilog.RequestLogger\Plumber.Serilog.csproj", "{C5E8FAAE-38F9-48DC-BA4D-2AB41FB51EDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plumber.Serilog.Extensions", "Plumber.Serilog.Extensions\Plumber.Serilog.Extensions.csproj", "{C5E8FAAE-38F9-48DC-BA4D-2AB41FB51EDD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github-workflows", "github-workflows", "{BDAC7535-8310-47F2-98A8-A8A3AEF0724C}"
 	ProjectSection(SolutionItems) = preProject
@@ -20,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github-workflows", "github-
 		.github\workflows\dotnet.tests.yml = .github\workflows\dotnet.tests.yml
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plumber.Serilog.Tests", "Plumber.Serilog.RequestLogger.Tests\Plumber.Serilog.Tests.csproj", "{00A6373C-234A-4DFE-B3F2-C867E3CF1690}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plumber.Serilog.Extensions.Tests", "Plumber.Serilog.Extensions.Tests\Plumber.Serilog.Extensions.Tests.csproj", "{00A6373C-234A-4DFE-B3F2-C867E3CF1690}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plumber.Serilog.Console", "Plumber.Serilog.Console\Plumber.Serilog.Console.csproj", "{CE75ECF6-5530-4F0A-86D2-196E6189585B}"
 EndProject
@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{956102
 	ProjectSection(SolutionItems) = preProject
 		images\plumber.png = images\plumber.png
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{80AC16D1-297D-4F10-86E3-CA5C6BC742F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BDAC7535-8310-47F2-98A8-A8A3AEF0724C} = {90AAF485-2231-412E-B176-536093F4C8AE}
+		{CE75ECF6-5530-4F0A-86D2-196E6189585B} = {80AC16D1-297D-4F10-86E3-CA5C6BC742F4}
 		{9561029E-5806-45DA-B9A2-94E549D08B54} = {90AAF485-2231-412E-B176-536093F4C8AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

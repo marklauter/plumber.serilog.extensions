@@ -1,7 +1,7 @@
 ﻿using Serilog;
 using Serilog.Events;
 
-namespace Plumber.Serilog;
+namespace Plumber.Serilog.Extensions;
 
 public sealed class RequestLoggerOptions<TRequest, TResponse>
     where TRequest : class

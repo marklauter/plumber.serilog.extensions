@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
-namespace Plumber.Serilog;
+namespace Plumber.Serilog.Extensions;
 
 public static class SerilogRequestHandlerExtensions
 {

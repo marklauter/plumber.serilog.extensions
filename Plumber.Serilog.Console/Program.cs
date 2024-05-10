@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Plumber;
-using Plumber.Serilog;
+using Plumber.Serilog.Extensions;
 using Serilog;
 using Serilog.Events;
 using Serilog.Exceptions;

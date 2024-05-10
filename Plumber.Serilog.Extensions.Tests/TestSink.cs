@@ -1,7 +1,7 @@
 ﻿using Serilog.Core;
 using Serilog.Events;
 
-namespace Plumber.Serilog.Tests;
+namespace Plumber.Serilog.Extensions.Tests;
 
 public class TestSink
     : ILogEventSink

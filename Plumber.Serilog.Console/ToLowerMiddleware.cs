@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Plumber;
+﻿using Plumber;
 
 internal sealed class ToLowerMiddleware(RequestMiddleware<string, string> next)
     : IMiddleware<string, string>

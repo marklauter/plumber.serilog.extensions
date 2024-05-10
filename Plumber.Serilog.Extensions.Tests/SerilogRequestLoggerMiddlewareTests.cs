@@ -3,7 +3,7 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Exceptions;
 
-namespace Plumber.Serilog.Tests;
+namespace Plumber.Serilog.Extensions.Tests;
 
 public class SerilogRequestLoggerMiddlewareTests
 {
