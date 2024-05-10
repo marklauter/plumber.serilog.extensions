@@ -16,7 +16,7 @@ public static IRequestHandler<TRequest, TResponse> UseSerilogRequestLogging<TReq
 public static IRequestHandler<TRequest, TResponse> UseSerilogRequestLogging<TRequest, TResponse>(
     this IRequestHandler<TRequest, TResponse> handler,
     Action<RequestLoggerOptions<TRequest, TResponse>> configureOptions)
-    where TRequest : class`  
+    where TRequest : class
 ```
 
 ## Sample Usage
