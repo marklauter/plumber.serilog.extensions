@@ -6,7 +6,7 @@ namespace Plumber.Serilog.Extensions;
 /// <summary>
 /// SerilogRequestHandlerExtensions provides extension methods for registering the Serilog middleware with the <see cref="IRequestHandler{TRequest, TResponse}"/>.
 /// </summary>
-public static class SerilogRequestHandlerExtensions
+public static class RequestHandlerSerilogExtensions
 {
     /// <summary>
     /// UseSerilogRequestLogging registers the Serilog middleware with the <see cref="IRequestHandler{TRequest, TResponse}"/>.

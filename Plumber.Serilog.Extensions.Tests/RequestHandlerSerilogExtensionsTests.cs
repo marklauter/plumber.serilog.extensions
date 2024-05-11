@@ -5,7 +5,7 @@ using Serilog.Exceptions;
 
 namespace Plumber.Serilog.Extensions.Tests;
 
-public class SerilogRequestLoggerMiddlewareTests
+public sealed class RequestHandlerSerilogExtensionsTests
 {
     [Fact]
     public async Task HandleRequestSerilogREquestLoggingMiddlewareAsync()
