@@ -3,8 +3,19 @@ using Microsoft.Extensions.Options;
 
 namespace Plumber.Serilog.Extensions;
 
+/// <summary>
+/// SerilogRequestHandlerExtensions provides extension methods for registering the Serilog middleware with the <see cref="IRequestHandler{TRequest, TResponse}"/>.
+/// </summary>
 public static class SerilogRequestHandlerExtensions
 {
+    /// <summary>
+    /// UseSerilogRequestLogging registers the Serilog middleware with the <see cref="IRequestHandler{TRequest, TResponse}"/>.
+    /// </summary>
+    /// <typeparam name="TRequest"></typeparam>
+    /// <typeparam name="TResponse"></typeparam>
+    /// <param name="handler"><see cref="IRequestHandler{TRequest, TResponse}"/></param>
+    /// <returns><see cref="IRequestHandler{TRequest, TResponse}"/></returns>
+    /// <exception cref="ArgumentException"></exception>
     public static IRequestHandler<TRequest, TResponse> UseSerilogRequestLogging<TRequest, TResponse>(
         this IRequestHandler<TRequest, TResponse> handler)
         where TRequest : class
@@ -21,6 +32,16 @@ public static class SerilogRequestHandlerExtensions
             : handler.Use<RequestLoggerMiddleware<TRequest, TResponse>>(options);
     }
 
+    /// <summary>
+    /// UseSerilogRequestLogging registers the Serilog middleware with the <see cref="IRequestHandler{TRequest, TResponse}"/>.
+    /// This overload allows you to configure the Serilog middleware.
+    /// </summary>
+    /// <typeparam name="TRequest"></typeparam>
+    /// <typeparam name="TResponse"></typeparam>
+    /// <param name="handler"><see cref="IRequestHandler{TRequest, TResponse}"/></param>
+    /// <param name="configureOptions"><see cref="RequestLoggerOptions{TRequest, TResponse}"/></param>
+    /// <returns><see cref="IRequestHandler{TRequest, TResponse}"/></returns>
+    /// <exception cref="ArgumentException"></exception>
     public static IRequestHandler<TRequest, TResponse> UseSerilogRequestLogging<TRequest, TResponse>(
         this IRequestHandler<TRequest, TResponse> handler,
         Action<RequestLoggerOptions<TRequest, TResponse>> configureOptions)
