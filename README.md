@@ -1,6 +1,9 @@
-![plumber logo](https://raw.githubusercontent.com/marklauter/plumber/main/images/plumber.png)
-
+## Build Status
 [![.NET Tests](https://github.com/marklauter/plumber.serilog.extensions/actions/workflows/dotnet.tests.yml/badge.svg)](https://github.com/marklauter/plumber.serilog.extensions/actions/workflows/dotnet.tests.yml)
+[![.NET Publish](https://github.com/marklauter/plumber.serilog.extensions/actions/workflows/dotnet.publish.yml/badge.svg)](https://github.com/marklauter/plumber.serilog.extensions/actions/workflows/dotnet.publish.yml)
+
+##
+![plumber logo](https://raw.githubusercontent.com/marklauter/plumber/main/images/plumber.png)
 
 # Serilog Extensions for Plumber: Pipelines for AWS Lambda
 Plumber.Serilog.Extensions provides Serilog middleware extensions for the [Plumber pipeline library](https://github.com/marklauter/plumber).
