@@ -1,6 +1,7 @@
 ## Build Status
 [![.NET Tests](https://github.com/marklauter/plumber.serilog.extensions/actions/workflows/dotnet.tests.yml/badge.svg)](https://github.com/marklauter/plumber.serilog.extensions/actions/workflows/dotnet.tests.yml)
 [![.NET Publish](https://github.com/marklauter/plumber.serilog.extensions/actions/workflows/dotnet.publish.yml/badge.svg?event=release)](https://github.com/marklauter/plumber.serilog.extensions/actions/workflows/dotnet.publish.yml)
+[![Nuget](https://img.shields.io/badge/Nuget-v1.1.1-blue)](https://www.nuget.org/packages/MSL.Plumber.Serilog.Extensions/)
 
 ##
 ![plumber logo](https://raw.githubusercontent.com/marklauter/plumber/main/images/plumber.png)
