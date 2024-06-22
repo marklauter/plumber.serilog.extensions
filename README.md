@@ -9,7 +9,9 @@
 ## 
 ![Plumber Logo](https://github.com/marklauter/plumber/blob/main/images/plumber.png "Plumber Logo")
 
-# Serilog Extensions for Plumber: Pipelines for AWS Lambda
+# Plumber Serilog Extensions
+## Plumber: Pipelines for host-free projects like AWS Lambda, Console, etc.
+
 The `Plumber.Serilog.Extensions` package provides Serilog middleware extensions for the [Plumber pipeline library](https://github.com/marklauter/plumber).
 
 ## IRequestHandler Extension Methods
