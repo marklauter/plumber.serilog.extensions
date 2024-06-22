@@ -6,8 +6,8 @@
 [![Nuget](https://img.shields.io/badge/.NET-7.0-blue)](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 [![Nuget](https://img.shields.io/badge/.NET-8.0-blue)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0/)
 
-##
-![plumber logo](https://raw.githubusercontent.com/marklauter/plumber/main/images/plumber.png)
+## 
+![Plumber Logo](https://github.com/marklauter/plumber/blob/main/images/plumber.png "Plumber Logo")
 
 # Serilog Extensions for Plumber: Pipelines for AWS Lambda
 The `Plumber.Serilog.Extensions` package provides Serilog middleware extensions for the [Plumber pipeline library](https://github.com/marklauter/plumber).
