@@ -10,7 +10,6 @@ internal sealed class RequestLoggerMiddleware<TRequest, TResponse>(
     RequestMiddleware<TRequest, TResponse> next,
     RequestLoggerOptions<TRequest, TResponse> options,
     DiagnosticContext diagnosticContext)
-    : IMiddleware<TRequest, TResponse>
     where TRequest : class
 {
     private static readonly LogEventProperty[] ZeroProperties = [];

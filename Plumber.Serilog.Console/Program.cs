@@ -15,7 +15,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console(new CompactJsonFormatter())
     .CreateLogger();
 
-var handlerBuilder = RequestHandlerBuilder.New<string, string>();
+var handlerBuilder = RequestHandlerBuilder.Create<string, string>();
 
 _ = handlerBuilder.Services
     .AddSerilog()

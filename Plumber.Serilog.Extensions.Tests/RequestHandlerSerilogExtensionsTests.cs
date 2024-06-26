@@ -20,8 +20,7 @@ public sealed class RequestHandlerSerilogExtensionsTests
             .WriteTo.Sink(sink)
             .CreateBootstrapLogger();
 
-        var handlerBuilder = RequestHandlerBuilder
-            .New<string, string>();
+        var handlerBuilder = RequestHandlerBuilder.Create<string, string>();
 
         _ = handlerBuilder.Services
             // https://github.com/serilog/serilog-extensions-hosting/blob/dev/src/Serilog.Extensions.Hosting/SerilogHostBuilderExtensions.cs

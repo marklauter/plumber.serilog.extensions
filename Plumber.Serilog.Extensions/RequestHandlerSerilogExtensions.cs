@@ -22,11 +22,7 @@ public static class RequestHandlerSerilogExtensions
     {
         ArgumentNullException.ThrowIfNull(handler);
 
-        var options = handler
-            .Services
-            .GetService<IOptions<RequestLoggerOptions<TRequest, TResponse>>>()?.Value
-            ?? new RequestLoggerOptions<TRequest, TResponse>();
-
+        var options = GetOrInitializeOptions(handler);
         return options.MessageTemplate == null
             ? throw new ArgumentException($"{nameof(options.MessageTemplate)} cannot be null.")
             : handler.Use<RequestLoggerMiddleware<TRequest, TResponse>>(options);
@@ -49,15 +45,20 @@ public static class RequestHandlerSerilogExtensions
     {
         ArgumentNullException.ThrowIfNull(handler);
 
-        var options = handler
-            .Services
-            .GetService<IOptions<RequestLoggerOptions<TRequest, TResponse>>>()?.Value
-            ?? new RequestLoggerOptions<TRequest, TResponse>();
+        var options = GetOrInitializeOptions(handler);
 
         configureOptions.Invoke(options);
-
         return options.MessageTemplate == null
             ? throw new ArgumentException($"{nameof(options.MessageTemplate)} cannot be null.")
             : handler.Use<RequestLoggerMiddleware<TRequest, TResponse>>(options);
+    }
+
+    private static RequestLoggerOptions<TRequest, TResponse> GetOrInitializeOptions<TRequest, TResponse>(IRequestHandler<TRequest, TResponse> handler)
+    where TRequest : class
+    {
+        return handler
+            .Services
+            .GetService<IOptions<RequestLoggerOptions<TRequest, TResponse>>>()?.Value
+            ?? new RequestLoggerOptions<TRequest, TResponse>();
     }
 }
