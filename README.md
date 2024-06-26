@@ -1,7 +1,7 @@
 ## Build Status
 [![.NET Tests](https://github.com/marklauter/plumber.serilog.extensions/actions/workflows/dotnet.tests.yml/badge.svg)](https://github.com/marklauter/plumber.serilog.extensions/actions/workflows/dotnet.tests.yml)
 [![.NET Publish](https://github.com/marklauter/plumber.serilog.extensions/actions/workflows/dotnet.publish.yml/badge.svg?event=release)](https://github.com/marklauter/plumber.serilog.extensions/actions/workflows/dotnet.publish.yml)
-[![Nuget](https://img.shields.io/badge/Nuget-v1.1.2-blue)](https://www.nuget.org/packages/MSL.Plumber.Serilog.Extensions/)
+[![Nuget](https://img.shields.io/badge/Nuget-v2.0.1-blue)](https://www.nuget.org/packages/MSL.Plumber.Serilog.Extensions/)
 [![Nuget](https://img.shields.io/badge/.NET-6.0-blue)](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 [![Nuget](https://img.shields.io/badge/.NET-7.0-blue)](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 [![Nuget](https://img.shields.io/badge/.NET-8.0-blue)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0/)
@@ -47,7 +47,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console(new CompactJsonFormatter())
     .CreateLogger();
 
-var handlerBuilder = RequestHandlerBuilder.New<string, string>();
+var handlerBuilder = RequestHandlerBuilder.Create<string, string>();
 
 _ = handlerBuilder.Services
     .AddSerilog()
