@@ -54,7 +54,7 @@ public static class RequestHandlerSerilogExtensions
     }
 
     private static RequestLoggerOptions<TRequest, TResponse> GetOrInitializeOptions<TRequest, TResponse>(IRequestHandler<TRequest, TResponse> handler)
-    where TRequest : class
+        where TRequest : class
     {
         return handler
             .Services

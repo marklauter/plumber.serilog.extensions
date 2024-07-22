@@ -21,7 +21,7 @@ _ = handlerBuilder.Services
     .AddSerilog()
     .AddLogging(loggingBuilder => loggingBuilder.AddSerilog());
 
-var handler = handlerBuilder.Build();
+using var handler = handlerBuilder.Build();
 
 _ = handler
     .UseSerilogRequestLogging(options =>
