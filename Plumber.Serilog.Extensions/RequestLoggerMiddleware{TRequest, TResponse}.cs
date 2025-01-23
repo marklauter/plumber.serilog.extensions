@@ -76,7 +76,7 @@ internal sealed class RequestLoggerMiddleware<TRequest, TResponse>(
             properties = ZeroProperties;
         }
 
-        properties = properties.Concat(getMessageTemplateProperties(context));
+        properties = properties!.Concat(getMessageTemplateProperties(context));
 
         var current = Activity.Current;
         var logEvent = new LogEvent(

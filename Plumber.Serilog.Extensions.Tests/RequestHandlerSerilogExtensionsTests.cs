@@ -36,7 +36,7 @@ public sealed class RequestHandlerSerilogExtensionsTests
                 options.EnrichDiagnosticContext = (diagnosticContext, context) =>
                 {
                     diagnosticContext.Set(nameof(context.Request), context.Request);
-                    diagnosticContext.Set(nameof(context.Response), context.Response);
+                    diagnosticContext.Set(nameof(context.Response), context.Response!);
                 };
             })
             .Use<ToLowerMiddleware>();
