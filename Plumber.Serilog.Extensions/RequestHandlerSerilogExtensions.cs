@@ -54,11 +54,9 @@ public static class RequestHandlerSerilogExtensions
     }
 
     private static RequestLoggerOptions<TRequest, TResponse> GetOrInitializeOptions<TRequest, TResponse>(IRequestHandler<TRequest, TResponse> handler)
-        where TRequest : class
-    {
-        return handler
+        where TRequest : class =>
+        handler
             .Services
             .GetService<IOptions<RequestLoggerOptions<TRequest, TResponse>>>()?.Value
             ?? new RequestLoggerOptions<TRequest, TResponse>();
-    }
 }
