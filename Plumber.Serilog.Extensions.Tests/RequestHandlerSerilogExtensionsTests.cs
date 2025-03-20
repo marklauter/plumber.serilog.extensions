@@ -8,7 +8,7 @@ namespace Plumber.Serilog.Extensions.Tests;
 public sealed class RequestHandlerSerilogExtensionsTests
 {
     [Fact]
-    public async Task HandleRequestSerilogREquestLoggingMiddlewareAsync()
+    public async Task HandleRequestSerilogRequestLoggingMiddlewareAsync()
     {
         var request = "Hello, World!";
 
@@ -23,7 +23,6 @@ public sealed class RequestHandlerSerilogExtensionsTests
         var handlerBuilder = RequestHandlerBuilder.Create<string, string>();
 
         _ = handlerBuilder.Services
-            // https://github.com/serilog/serilog-extensions-hosting/blob/dev/src/Serilog.Extensions.Hosting/SerilogHostBuilderExtensions.cs
             .AddSerilog()
             .AddLogging(loggingBuilder => loggingBuilder.AddSerilog());
 
